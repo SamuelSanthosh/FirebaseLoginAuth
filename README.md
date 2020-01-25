@@ -4,7 +4,7 @@ Created a simple Login page that contains username and password field.
 Connected the app to Firebase.
 
 To view this application: 
-Goto https://whack-a-mole-game.netlify.com/
+Goto https://firebase-login-auth.netlify.com/
 
 Have created 2 usernames under firebase Authentication tab
 
