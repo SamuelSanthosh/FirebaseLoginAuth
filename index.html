@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Firebase Web login Authentication</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_name">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBnBkwA9cWNJGQqdyaK8rfB_RgxQyBnNPw",
+    authDomain: "fir-login-406dd.firebaseapp.com",
+    databaseURL: "https://fir-login-406dd.firebaseio.com",
+    projectId: "fir-login-406dd",
+    storageBucket: "fir-login-406dd.appspot.com",
+    messagingSenderId: "529925201308",
+    appId: "1:529925201308:web:57ca07cb709eef385b7c59",
+    measurementId: "G-TTWNVEM18Z"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <script src="index.js"></script>
+</body>
+</html>
